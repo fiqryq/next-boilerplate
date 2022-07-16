@@ -1,8 +1,7 @@
-import { Hello } from '@/components/Hello';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
-  return <Hello />;
+  return <h1 className='text-green-600'>Boilerplate</h1>
 };
 
 export default Home;
