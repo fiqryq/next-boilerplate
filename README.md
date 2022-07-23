@@ -17,7 +17,7 @@ npm run dev
 - SEO with tag Next `<Head/>`
 - Fetcher utils
 
-## Utils Usage
+### Utils Usage
 
 `fetch.ts`
 
