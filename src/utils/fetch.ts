@@ -3,7 +3,7 @@ import * as rax from 'retry-axios';
 
 rax.attach();
 
-export defßault function fetch(options: any) {
+export default function fetch(options: any) {
   return new Promise((resolve, reject) => {
     axios({
       ...options,
