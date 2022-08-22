@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "next": "12.1.5",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "retry-axios": "^3.0.0"
   },
   "devDependencies": {
