@@ -1,7 +1,14 @@
 import type { NextPage } from 'next';
+import Container from '@/layout/container';
+import { Text } from '@/components';
 
 const Home: NextPage = () => {
-  return <h1 className='text-red-600'>Boilerplate</h1>
+  return (
+    <Container>
+      <Text as='h1'>Hello</Text>
+      <Text as='a' href=''>Hello</Text>
+    </Container>
+  )
 };
 
 export default Home;
