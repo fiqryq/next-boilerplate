@@ -1,5 +1,5 @@
 import { default as NextHead } from "next/head";
-interface Props {
+type Props = {
     pageTitle: string;
     pageDescription: string;
     metaTitle: string;
@@ -7,7 +7,15 @@ interface Props {
     metaImage: string;
     metaUrl: string;
 }
-const Head: React.FC<Props> = ({ pageTitle, pageDescription, metaTitle, metaDescription, metaImage, metaUrl }) => {
+
+const Head = ({
+    pageTitle,
+    pageDescription,
+    metaTitle,
+    metaDescription,
+    metaImage,
+    metaUrl
+}: Props) => {
     return (
         <NextHead>
             <title>{pageTitle}</title>
@@ -22,4 +30,4 @@ const Head: React.FC<Props> = ({ pageTitle, pageDescription, metaTitle, metaDesc
     )
 }
 
-export default Head;
+export { Head };
