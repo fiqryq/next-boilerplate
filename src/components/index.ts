@@ -1,2 +1,2 @@
-export * from './head'
+export * from './seo'
 export * from './text'

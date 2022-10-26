@@ -8,7 +8,7 @@ type Props = {
     metaUrl: string;
 }
 
-const Head = ({
+const NextSEO = ({
     pageTitle,
     pageDescription,
     metaTitle,
@@ -30,4 +30,4 @@ const Head = ({
     )
 }
 
-export { Head };
+export { NextSEO };
