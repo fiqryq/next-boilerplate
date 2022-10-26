@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/container-queries": "^0.1.0",
     "axios": "^0.27.2",
     "next": "^13.0.0",
     "react": "^18.2.0",
@@ -16,6 +17,9 @@
     "retry-axios": "^3.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.7",
     "@types/node": "17.0.24",
     "@types/react": "18.0.5",
     "@types/react-dom": "18.0.1",
