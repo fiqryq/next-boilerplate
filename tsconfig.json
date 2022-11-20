@@ -31,7 +31,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "commitlint.config.js",
+    "commitlint.config.js"
   ],
   "exclude": [
     "node_modules"
