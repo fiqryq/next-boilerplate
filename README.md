@@ -13,8 +13,9 @@ npm run dev
 
 - Absolute path import using `@/` prefix
 - Integrate with [Tailwind CSS](https://tailwindcss.com/)
-- Prettier plugin tailwindcss
-- SEO with tag Next `<Head/>`
+- All tailwind plugins
+- Husky
+- Commitlint
 
 ### Folder Structure
 
@@ -22,23 +23,11 @@ npm run dev
 .
 ├── README.md                       # README file
 ├── public                          # Public assets folder
+│   pages                            # Next JS Pages
 ├── src
 │   ├── layouts                     # Layouts components
-│   ├── pages                       # Next JS Pages
 │   ├── styles                      # Styles folder
 │   ├── utils                      # utils folder
 ├── tailwind.config.js              # Tailwind CSS configuration
 └── tsconfig.json                   # TypeScript configuration
-```
-
-### Dependency version
-
-```
-"next": "12.1.5",
-"react": "18.0.0",
-"react-dom": "18.0.0"
-"prettier-plugin-tailwindcss": "^0.1.8",
-"tailwindcss": "^3.1.6",
-"axios": "^0.27.2",
-"retry-axios": "^3.0.0"
 ```
