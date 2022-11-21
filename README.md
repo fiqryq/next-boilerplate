@@ -4,9 +4,9 @@ Simple NextJs Boilerplate with Tailwind CSS 3 + TypeScript ⚡️ for fast Devel
 
 ```bash
 # install dependency
-npm install
+yarn install
 # run local server development
-npm run dev
+yarn run dev
 ```
 
 ### Features
