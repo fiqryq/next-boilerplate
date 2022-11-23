@@ -1,10 +1,6 @@
 ![untitled](https://user-images.githubusercontent.com/25787603/203488615-7b381491-7966-4dbc-abfe-31334130eda3.png)
 
-<p align="center">
-  <a href="https://twitter.com/intent/follow?screen_name=fiqryq_">
-    <img src="https://img.shields.io/twitter/follow/fiqryq_?style=for-the-badge&color=1DA1F2&labelColor=000000" alt="Follow @fiqryq_" />
-  </a>
-</p>
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
 
 ### Getting Started
 
@@ -41,5 +37,6 @@ yarn run dev
 
 **After your pull request is merged**, you can safely delete your branch.
 
+---
 
 Made with ♥ by Fiqry choerudin
