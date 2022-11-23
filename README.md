@@ -1,6 +1,6 @@
 ![untitled](https://user-images.githubusercontent.com/25787603/203488615-7b381491-7966-4dbc-abfe-31334130eda3.png)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffiqryq%2Fnext-boilerplate)
 
 ### Getting Started
 
