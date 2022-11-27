@@ -25,16 +25,16 @@ yarn run dev
 - integrate with all tailwind plugins.
 - precommit using husky.
 - commitlint.
-- lint-staged
-- prettier
+- lint-staged.
+- prettier.
 - auto update dependencies using [Renovate](https://github.com/renovatebot/renovate).
 - analyzes each PR's impact on your next.js app's bundle size and displays it using a commen using [nextjs bundle analysis](https://github.com/hashicorp/nextjs-bundle-analysis).
 
 ### 🤝 Contributing
-
-1. fork this repository;
+1. find [issue](https://github.com/fiqryq/next-boilerplate/issues)
+1. fork this repository
 2. create your branch: `git checkout -b new-feature`
-3. commit your changes: `git commit -m 'feat: add some feature'`
+3. commit your changes: `git commit -m 'feat: add some feature (#issue_number)'`
 4. push to the branch: `git push origin new-feature`.
 
 **After your pull request is merged**, you can safely delete your branch.
