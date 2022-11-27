@@ -25,6 +25,8 @@ yarn run dev
 - integrate with all tailwind plugins.
 - precommit using husky.
 - commitlint.
+- lint-staged
+- prettier
 - auto update dependencies using [Renovate](https://github.com/renovatebot/renovate).
 - analyzes each PR's impact on your next.js app's bundle size and displays it using a commen using [nextjs bundle analysis](https://github.com/hashicorp/nextjs-bundle-analysis).
 
