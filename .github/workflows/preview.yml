@@ -1,25 +1,32 @@
-name: Preview Environment
+name: Performance Audit
 
-env:
-  VERCEL_ACCESS_TOKEN: ${{ secrets.VERCEL_ACCESS_TOKEN }}
-  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
-on:
-  pull_request:
-    types: [opened, synchronize, closed]
-    branches:
-      - main
+on: [pull_request]
 
 jobs:
-  deploy:
-    if: ${{ github.event.action == 'opened' || github.event.action == 'synchronize' }}
+  audit:
+    name: Performance Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: snaplet/vercel-action@v2
-  delete:
-    if: ${{ github.event.action == 'closed' }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: snaplet/vercel-action@v2
+      - name: Create report directory
+        run: mkdir -p ${{ github.workspace }}/tmp/artifacts
+
+      - name: Get Vercel Preview URL
+        id: vercel-deployment
+        uses: ViktorJT/Get-Vercel-preview-url@main
         with:
-          delete: true
+          vercel_access_token: ${{ secrets.VERCEL_ACCESS_TOKEN }}
+          gh_token: ${{ secrets.REPO_TOKEN }}
+
+      - name: Run Lighthouse audit on preview urls
+        uses: foo-software/lighthouse-check-action@master
+        with:
+          device: 'all'
+          gitHubAccessToken: ${{ secrets.REPO_TOKEN }}
+          outputDirectory: ${{ github.workspace }}/tmp/artifacts
+          urls: '${{ steps.vercel-deployment.outputs.preview_url }}'
+
+      - name: Upload reports
+        uses: actions/upload-artifact@master
+        with:
+          name: Lighthouse reports
+          path: ${{ github.workspace }}/tmp/artifacts
