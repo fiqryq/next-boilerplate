@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import Container from '@/layout/container';
 import { Text } from '@fiqryq/piqui';
+import Container from '@/layouts/container';
 
 const Home: NextPage = () => {
   return (
