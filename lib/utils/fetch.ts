@@ -18,7 +18,7 @@ export default function fetch(options: any) {
           'OPTIONS',
           'DELETE',
           'PUT',
-          'POST ',
+          'POST '
         ],
         // The response status codes to retry.  Supports a double
         // array with a list of ranges.  Defaults to:
@@ -27,8 +27,8 @@ export default function fetch(options: any) {
         onRetryAttempt: (err: any) => {
           const cfg = rax.getConfig(err);
           console.log(`Retry attempt #${cfg?.currentRetryAttempt}`);
-        },
-      },
+        }
+      }
     })
       .then((res: any) => {
         resolve(res.data);
@@ -37,7 +37,7 @@ export default function fetch(options: any) {
         const defaultError = {
           code: 500,
           status: 'error',
-          message: 'Failed to fetch data. Please contact developer.',
+          message: 'Failed to fetch data. Please contact developer.'
         };
 
         if (typeof err.response === 'undefined') reject(defaultError);
