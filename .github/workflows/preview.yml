@@ -1,32 +1,27 @@
-name: Performance Audit
+name: Capture Vercel preview URL
 
-on: [pull_request]
+on:
+  issue_comment:
+    types: [edited]
 
 jobs:
-  audit:
-    name: Performance Audit
-    runs-on: ubuntu-latest
+  capture_vercel_preview_url:
+    name: Capture Vercel preview URL
+    runs-on: 'ubuntu-latest'
     steps:
-      - name: Create report directory
-        run: mkdir -p ${{ github.workspace }}/tmp/artifacts
-
-      - name: Get Vercel Preview URL
-        id: vercel-deployment
-        uses: ViktorJT/Get-Vercel-preview-url@main
+      - uses: aaimio/vercel-preview-url-action@v1
+        id: vercel_preview_url
         with:
-          vercel_access_token: ${{ secrets.VERCEL_ACCESS_TOKEN }}
-          gh_token: ${{ secrets.REPO_TOKEN }}
-
-      - name: Run Lighthouse audit on preview urls
-        uses: foo-software/lighthouse-check-action@master
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+      # Below is merely an example of what you could do with the preview URL.
+      # The preview URL is accessed through ${{ steps.<step_id>.outputs.vercel_preview_url }}
+      - uses: actions/github-script@v3
         with:
-          device: 'all'
-          gitHubAccessToken: ${{ secrets.REPO_TOKEN }}
-          outputDirectory: ${{ github.workspace }}/tmp/artifacts
-          urls: '${{ steps.vercel-deployment.outputs.preview_url }}'
-
-      - name: Upload reports
-        uses: actions/upload-artifact@master
-        with:
-          name: Lighthouse reports
-          path: ${{ github.workspace }}/tmp/artifacts
+          github-token: ${{secrets.REPO_TOKEN}}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'The preview URL is: ${{ steps.vercel_preview_url.outputs.vercel_preview_url }}.'
+            });
