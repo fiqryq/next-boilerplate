@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --fix --dir pages --dir lib",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "eslint-config-next": "^13.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.4",
     "postcss": "^8.4.12",
