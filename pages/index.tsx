@@ -1,13 +1,8 @@
+import { Sample } from '@/components/sample';
 import type { NextPage } from 'next';
-import { Text } from '@fiqryq/piqui';
-import Container from '@/layouts/container';
 
 const Home: NextPage = () => {
-  return (
-    <Container>
-      <Text as="h1">Hello World!</Text>
-    </Container>
-  );
+  return <Sample />;
 };
 
 export default Home;
