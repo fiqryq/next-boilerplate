@@ -7,9 +7,9 @@ import { themes } from '@/src/constant/theme';
 interface Props {
   className?: string;
 }
-
-const ThemeToggle: React.FC<Props> = ({ className, ...props }) => {
+export const ThemeToggle = ({ className, ...props }: Props) => {
   const [selectedTheme, setSelectedTheme] = useState<any>();
+
   useEffect(() => {
     if (selectedTheme) {
       document.documentElement.setAttribute('data-theme', selectedTheme.value);
@@ -92,5 +92,3 @@ const ThemeToggle: React.FC<Props> = ({ className, ...props }) => {
     </Listbox>
   );
 };
-
-export default ThemeToggle;

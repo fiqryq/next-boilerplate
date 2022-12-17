@@ -1,4 +1,4 @@
-import ThemeToggle from '@/src/components/themeToggle';
+import { ThemeToggle } from '@/src/components/themeToggle';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
