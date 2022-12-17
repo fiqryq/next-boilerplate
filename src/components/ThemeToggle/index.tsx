@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Listbox } from '@headlessui/react';
-import { themes } from '@/constant/theme';
-import { LightIcon, DarkIcon } from '../Icons';
 import clsx from 'clsx';
+import { LightIcon, DarkIcon } from '../icons';
+import { themes } from '@/src/constant/theme';
 
 interface Props {
   className?: string;
 }
+
 const ThemeToggle: React.FC<Props> = ({ className, ...props }) => {
   const [selectedTheme, setSelectedTheme] = useState<any>();
   useEffect(() => {
@@ -92,4 +93,4 @@ const ThemeToggle: React.FC<Props> = ({ className, ...props }) => {
   );
 };
 
-export { ThemeToggle };
+export default ThemeToggle;
