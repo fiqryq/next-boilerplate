@@ -94,4 +94,4 @@ const ThemeToggle: React.FC<Props> = ({ className, ...props }) => {
   );
 };
 
-export { ThemeToggle };
+export default ThemeToggle;

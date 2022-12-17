@@ -1,4 +1,4 @@
-import { ThemeToggle } from '@/components/themeToggle';
+import ThemeToggle from '@/components/themeToggle';
 
 const SamplePage = () => (
   <div className="bg-[#fafafa]">
@@ -12,4 +12,4 @@ const SamplePage = () => (
   </div>
 );
 
-export { SamplePage };
+export default SamplePage;
