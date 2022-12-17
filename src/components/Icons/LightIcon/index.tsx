@@ -1,4 +1,4 @@
-export function LightIcon(props) {
+export function LightIcon(props: any) {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" {...props}>
       <path
