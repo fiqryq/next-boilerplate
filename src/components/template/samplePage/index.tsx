@@ -1,4 +1,4 @@
-import ThemeToggle from '@/components/themeToggle';
+import ThemeToggle from '@/src/components/themeToggle';
 
 const SamplePage = () => (
   <div className="bg-[#fafafa]">

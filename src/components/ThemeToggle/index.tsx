@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Listbox } from '@headlessui/react';
-import { themes } from '@/constant/theme';
 import clsx from 'clsx';
 import { LightIcon, DarkIcon } from '../icons';
+import { themes } from '@/src/constant/theme';
 
 interface Props {
   className?: string;

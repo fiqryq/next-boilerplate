@@ -16,11 +16,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@/template/*": ["template/*"],
-      "@/constant/*": ["src/constant/*"],
       "@/lib/*": ["lib/*"],
       "@/css/*": ["css/*"],
+      "@/pages/*": ["pages/*"],
       "@/src/*": ["src/*"]
     }
   },
