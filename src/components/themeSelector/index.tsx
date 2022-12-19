@@ -8,7 +8,7 @@ interface Props {
   className?: string;
 }
 
-export const ThemeToggle = ({ className, ...props }: Props) => {
+const ThemeSelector: React.FC<Props> = ({ className, ...props }) => {
   const [selectedTheme, setSelectedTheme] = useState<any>();
 
   useEffect(() => {
@@ -94,3 +94,5 @@ export const ThemeToggle = ({ className, ...props }: Props) => {
     </Listbox>
   );
 };
+
+export default ThemeSelector;
