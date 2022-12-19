@@ -27,6 +27,7 @@ yarn run dev
 - commitlint.
 - lint-staged.
 - prettier.
+- theme selector
 - auto update dependencies using [Renovate](https://github.com/renovatebot/renovate).
 - analyzes each PR's impact on your next.js app's bundle size and displays it using a commen using [nextjs bundle analysis](https://github.com/hashicorp/nextjs-bundle-analysis).
 
