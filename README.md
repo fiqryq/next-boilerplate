@@ -9,6 +9,7 @@ create new project :
 ```
 npx create-next-app --example https://github.com/fiqryq/next-boilerplate <YOUR_APP_NAME>
 ```
+
 or use this template and clone then run :
 
 ```bash
@@ -27,16 +28,18 @@ yarn run dev
 - commitlint.
 - lint-staged.
 - prettier.
-- theme selector
+- theme selector.
+- auto generate sitemap.
 - auto update dependencies using [Renovate](https://github.com/renovatebot/renovate).
 - analyzes each PR's impact on your next.js app's bundle size and displays it using a commen using [nextjs bundle analysis](https://github.com/hashicorp/nextjs-bundle-analysis).
 
 ### 🤝 Contributing
+
 1. find [issue](https://github.com/fiqryq/next-boilerplate/issues)
 1. fork this repository
-2. create your branch: `git checkout -b new-feature`
-3. commit your changes: `git commit -m 'feat: add some feature (#issue_number)'`
-4. push to the branch: `git push origin new-feature`.
+1. create your branch: `git checkout -b new-feature`
+1. commit your changes: `git commit -m 'feat: add some feature (#issue_number)'`
+1. push to the branch: `git push origin new-feature`.
 
 **After your pull request is merged**, you can safely delete your branch.
 
