@@ -1,4 +1,4 @@
-import ThemeSelector from '@/src/components/themeSelector';
+import ThemeSelector from '@/components/themeSelector';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {

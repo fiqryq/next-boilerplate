@@ -5,7 +5,8 @@ module.exports = {
   // Lint & Prettify TS and JS files
   '**/*.(ts|tsx|js)': filenames => [
     `yarn lint`,
-    `yarn prettier --write ${filenames.join(' ')}`
+    `yarn prettier --write ${filenames.join(' ')}`,
+    `yarn test`
   ],
 
   // Prettify only Markdown and JSON files
