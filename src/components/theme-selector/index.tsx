@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Listbox } from '@headlessui/react';
 import clsx from 'clsx';
 import { LightIcon, DarkIcon } from '../icons';
-import { themes } from '@/src/constant/theme';
+import { themes } from '@/constant/theme';
 
 interface Props {
   className?: string;

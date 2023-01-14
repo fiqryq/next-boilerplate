@@ -16,10 +16,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/lib/*": ["lib/*"],
-      "@/css/*": ["css/*"],
-      "@/pages/*": ["pages/*"],
-      "@/src/*": ["src/*"]
+      "@/*": ["./src/*"],
+      "@/public/*": ["./public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "commitlint.config.js"],
