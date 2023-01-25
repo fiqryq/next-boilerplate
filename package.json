@@ -23,7 +23,8 @@
     "next-sitemap": "^3.1.43",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "retry-axios": "^3.0.0"
+    "retry-axios": "^3.0.0",
+    "tailwind-merge": "^1.8.1"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.2.0",
