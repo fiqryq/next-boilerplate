@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Listbox } from '@headlessui/react';
-import clsx from 'clsx';
 import { LightIcon, DarkIcon } from '../icons';
 import { themes } from '@/constant/theme';
-
+import { cn } from '@/lib/utils';
 interface Props {
   className?: string;
 }
@@ -45,7 +44,7 @@ const ThemeSelector: React.FC<Props> = ({ className, ...props }) => {
       as="div"
       value={selectedTheme}
       onChange={setSelectedTheme}
-      className={clsx(className, 'relative')}
+      className={cn(className, 'relative')}
       {...props}
     >
       <Listbox.Label className="sr-only">Theme</Listbox.Label>
@@ -65,7 +64,7 @@ const ThemeSelector: React.FC<Props> = ({ className, ...props }) => {
             key={theme.value}
             value={theme}
             className={({ active, selected }) =>
-              clsx(
+              cn(
                 'flex cursor-pointer select-none items-center rounded-[0.625rem] p-1',
                 {
                   'text-sky-500': selected,
@@ -80,7 +79,7 @@ const ThemeSelector: React.FC<Props> = ({ className, ...props }) => {
               <>
                 <div className="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5">
                   <theme.icon
-                    className={clsx(
+                    className={cn(
                       'h-4 w-4',
                       selected
                         ? 'fill-sky-400 dark:fill-sky-400'
