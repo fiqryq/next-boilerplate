@@ -12,7 +12,7 @@ specifiers:
   '@testing-library/react': ^13.4.0
   '@types/node': 18.11.18
   '@types/react': 18.0.27
-  '@types/react-dom': 18.0.10
+  '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': ^5.13.0
   '@typescript-eslint/parser': ^5.0.0
   '@vitejs/plugin-react': ^3.0.1
@@ -70,7 +70,7 @@ devDependencies:
   '@testing-library/react': 13.4.0_react-dom@18.2.0+react@18.2.0
   '@types/node': 18.11.18
   '@types/react': 18.0.27
-  '@types/react-dom': 18.0.10
+  '@types/react-dom': 18.0.11
   '@vitejs/plugin-react': 3.0.1_vite@4.0.4
   '@vitest/browser': 0.28.3
   '@vitest/coverage-c8': 0.28.3_ce0ae0b91942f872830ba686403373b8
@@ -1066,7 +1066,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.13
       '@testing-library/dom': 8.20.0
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: true
@@ -1137,8 +1137,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/18.0.10:
-    resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==}
+  /@types/react-dom/18.0.11:
+    resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
       '@types/react': 18.0.27
     dev: true

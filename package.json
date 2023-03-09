@@ -38,7 +38,7 @@
     "@testing-library/react": "^13.4.0",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
-    "@types/react-dom": "18.0.10",
+    "@types/react-dom": "18.0.11",
     "@vitest/browser": "^0.28.3",
     "@vitest/coverage-c8": "^0.28.3",
     "@vitest/ui": "^0.28.2",
