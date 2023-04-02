@@ -31,7 +31,7 @@ specifiers:
   jsdom: ^21.1.0
   lint-staged: ^13.0.4
   next: ^13.1.2
-  next-seo: ^5.15.0
+  next-seo: ^6.0.0
   next-sitemap: ^3.1.43
   postcss: ^8.4.12
   prettier: ^2.8.0
@@ -55,7 +55,7 @@ dependencies:
   axios: 1.2.4
   clsx: 1.2.1
   next: 13.1.5_react-dom@18.2.0+react@18.2.0
-  next-seo: 5.15.0_97b2b516ab5e0373b050ebd51d6654c8
+  next-seo: 6.0.0_97b2b516ab5e0373b050ebd51d6654c8
   next-sitemap: 3.1.47_@next+env@13.1.5+next@13.1.5
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -4014,8 +4014,8 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  /next-seo/5.15.0_97b2b516ab5e0373b050ebd51d6654c8:
-    resolution: {integrity: sha512-LGbcY91yDKGMb7YI+28n3g+RuChUkt6pXNpa8FkfKkEmNiJkeRDEXTnnjVtwT9FmMhG6NH8qwHTelGrlYm9rgg==}
+  /next-seo/6.0.0_97b2b516ab5e0373b050ebd51d6654c8:
+    resolution: {integrity: sha512-jKKt1p1z4otMA28AyeoAONixVjdYmgFCWwpEFtu+DwRHQDllVX3RjtyXbuCQiUZEfQ9rFPBpAI90vDeLZlMBdg==}
     peerDependencies:
       next: ^8.1.1-canary.54 || >=9.0.0
       react: '>=16.0.0'
