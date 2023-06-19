@@ -32,7 +32,7 @@ specifiers:
   lint-staged: ^13.0.4
   next: ^13.1.2
   next-seo: ^5.15.0
-  next-sitemap: ^3.1.43
+  next-sitemap: ^4.0.0
   postcss: ^8.4.12
   prettier: ^2.8.0
   prettier-plugin-tailwindcss: ^0.2.0
@@ -56,7 +56,7 @@ dependencies:
   clsx: 1.2.1
   next: 13.1.5_react-dom@18.2.0+react@18.2.0
   next-seo: 5.15.0_97b2b516ab5e0373b050ebd51d6654c8
-  next-sitemap: 3.1.47_@next+env@13.1.5+next@13.1.5
+  next-sitemap: 4.0.1_@next+env@13.1.5+next@13.1.5
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   retry-axios: 3.0.0_axios@1.2.4
@@ -452,7 +452,7 @@ packages:
       '@commitlint/types': 17.4.0
       fs-extra: 11.1.0
       git-raw-commits: 2.0.11
-      minimist: 1.2.7
+      minimist: 1.2.8
     dev: false
 
   /@commitlint/resolve-extends/17.4.0:
@@ -2104,7 +2104,7 @@ packages:
     dependencies:
       acorn-node: 1.8.2
       defined: 1.0.1
-      minimist: 1.2.7
+      minimist: 1.2.8
 
   /didyoumean/1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
@@ -3643,7 +3643,7 @@ packages:
     resolution: {integrity: sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==}
     hasBin: true
     dependencies:
-      minimist: 1.2.7
+      minimist: 1.2.8
     dev: true
 
   /json5/2.2.3:
@@ -3967,8 +3967,8 @@ packages:
       kind-of: 6.0.3
     dev: false
 
-  /minimist/1.2.7:
-    resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
+  /minimist/1.2.8:
+    resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
   /mlly/1.1.0:
     resolution: {integrity: sha512-cwzBrBfwGC1gYJyfcy8TcZU1f+dbH/T+TuOhtYP2wLv/Fb51/uV7HJQfBPtEupZ2ORLRU1EKFS/QfS3eo9+kBQ==}
@@ -4026,8 +4026,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /next-sitemap/3.1.47_@next+env@13.1.5+next@13.1.5:
-    resolution: {integrity: sha512-LZxCWZ6lhQBfv1cuGob3tnsaHWffQM7VDmkXXp8u3n4LD7EJAR/SamlMj3mpHa8bFeuR6TjjRqrq/7e4WSOcLQ==}
+  /next-sitemap/4.0.1_@next+env@13.1.5+next@13.1.5:
+    resolution: {integrity: sha512-dY6vKE/uayNYSfhXA64U9NZYSJtFzK01oBouY+XqgQieksKBG9BWNmq8yGSJUermyux4wCnNa9gLHwSk38emhA==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
@@ -4036,7 +4036,7 @@ packages:
     dependencies:
       '@corex/deepmerge': 4.0.37
       '@next/env': 13.1.5
-      minimist: 1.2.7
+      minimist: 1.2.8
       next: 13.1.5_react-dom@18.2.0+react@18.2.0
     dev: false
 
@@ -5289,7 +5289,7 @@ packages:
     dependencies:
       '@types/json5': 0.0.29
       json5: 1.0.2
-      minimist: 1.2.7
+      minimist: 1.2.8
       strip-bom: 3.0.0
     dev: true
 
